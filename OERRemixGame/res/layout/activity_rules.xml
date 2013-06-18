@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RulesActivity" >
+
+     <LinearLayout
+            android:id="@+id/mainmenu_content_controls"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            tools:ignore="UselessParent" >
+
+         <TextView
+             android:id="@+id/rulesText1"
+             android:text="@string/rules_title"
+             android:textSize="25sp"
+             android:layout_marginTop="10dp"
+             android:textColor="@color/black"
+             android:background="@color/white"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+             
+         </TextView>
+
+		    <RadioButton
+		        android:id="@+id/radioButton1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:checked="true"
+		        android:clickable="false"
+		        android:layout_marginTop="15dp"
+		        android:textSize="20sp"
+		        android:text="@string/rule1" />
+		
+		    <RadioButton
+		        android:id="@+id/radioButton2"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:checked="true"
+		        android:clickable="false"
+		        android:layout_marginTop="5dp"
+		        android:textSize="20sp"
+		        android:text="@string/rule2" />
+
+		    <RadioButton
+		        android:id="@+id/radioButton3"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:checked="true"
+		        android:clickable="false"
+		        android:layout_marginTop="5dp"
+		        android:textSize="20sp"
+		        android:text="@string/rule3" />
+
+		    <RadioButton
+		        android:id="@+id/radioButton4"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:checked="true"
+		        android:clickable="false"
+		        android:layout_marginTop="5dp"
+		        android:textSize="20sp"
+		        android:text="@string/rule4" />
+
+		    <RadioButton
+		        android:id="@+id/radioButton5"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		      	android:checked="true"
+		        android:clickable="false"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginBottom="15dp"
+		        android:textSize="20sp"
+		        android:text="@string/rule5" />
+    
+    </LinearLayout>
+
+</RelativeLayout>

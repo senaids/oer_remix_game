@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_menu2"
+    tools:context=".MainMenuActivity" >
+
+  	<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/main_menu2"
+        tools:ignore="UselessParent" >
+        <!-- android:background="@drawable/main_menu"
+         -->
+
+        <LinearLayout
+            android:id="@+id/mainmenu_content_controls"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:layout_marginTop="60sp"
+            android:layout_marginBottom="60sp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            tools:ignore="UselessParent" >
+
+            <Button
+                android:id="@+id/start_button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/picture"
+                android:onClick="startFullscreenActivity"
+                android:text="@string/start_button"/>
+
+            <Button
+                android:id="@+id/rules_button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:contentDescription="@string/picture"
+                android:layout_weight="1"
+                android:onClick="startRulesActivity"
+                android:text="@string/rules_button"/>
+
+            <Button
+                android:id="@+id/info_button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/picture"
+                android:onClick="startInfoscreenActivity"
+                android:text="@string/info_button"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

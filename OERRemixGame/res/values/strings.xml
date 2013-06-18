@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OER REMIX</string>
+    <string name="main_screen_text">MAIN\nMENU\nSCREEN\nMODE</string>
+    <string name="full_screen_text">FULL\nSCREEN\nMODE</string>
+    <string name="start_button">PLAY</string>
+    <string name="info_button">INFO</string>
+    <string name="rules_button">RULES</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="picture">Picture</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="title_activity_infoscreen">InfoscreenActivity</string>
+    <string name="dealAgainText">Deal Again</string>
+
+    <!-- Names for table 4, bottom -->
+    <string name="image">Image</string>
+    <string name="text">Text</string>
+    <string name="music">Music</string>
+    <string name="video">Video</string>
+    <string name="test">Test</string>
+    <string name="title_activity_game2">Game2Activity</string>
+
+    <!-- Names of licences -->
+    <string name="c">C</string>
+    <string name="cc_by">CC-BY</string>
+    <string name="pd">PD</string>
+    <string name="cc_by_sa">CC-BY-SA</string>
+    <string name="cc_by_sa_nc">CC-BY-NC-SA</string>
+    <string name="gfdl">GFDL</string>
+    <string name="checkButton">Check</string>
+    <string name="finalQuestion">Select all licenses the final product can be:</string>
+    <string name="title_activity_wrong">WrongActivity</string>
+
+    <!-- Rules -->
+    <string name="rules_title">License Compatibility Rules</string>
+    <string name="rule1">PD cards and CC-BY cards may be remixed with all others except (C) cards.</string>
+    <string name="rule2">CC-BY-SA cards may only be remixed with PD, CC-BY, and other CC-BY-SA cards.</string>
+    <string name="rule3">CC-BY-NC-SA cards may only be remixed with PD,CC-BY, and other CC-BY-NC-SA cards.</string>
+    <string name="rule4">GFDL cards may only be remixed with PD, CC-BY, and other GFDL cards.</string>
+    <string name="rule5">(C) cards may not be remixed at all.</string>
+    <string name="title_activity_rules">RulesActivity</string>
+
+    <!-- Info -->
+    <string name="info_title">Mobile Applications</string>
+    <string name="developers">Designers and Developers:</string>
+    <string name="developer1">Amir Kanuric</string>
+    <string name="developer2">Admir Nuhanovic</string>
+    <string name="developer3">Senaid Salkic</string>
+    <string name="supervisors">Supervisors:</string>
+    <string name="supervisor1">Martin Ebner</string>
+    <string name="supervisor2">Wolfgang Slany</string>
+    <string name="tugraz">TU GRAZ</string>
+    
+</resources>

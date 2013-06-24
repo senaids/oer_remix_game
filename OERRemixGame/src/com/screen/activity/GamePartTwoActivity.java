@@ -35,6 +35,7 @@ public class GamePartTwoActivity extends Activity {
 	private Point windowSize;
 	private Button checkButton;
 	private LinearLayout linearLayout;
+	private GamePartTwoActivity myinstance;
 	
 	@SuppressWarnings("deprecation")
 	@Override
@@ -43,7 +44,7 @@ public class GamePartTwoActivity extends Activity {
 		setContentView(R.layout.activity_game2);
 
         windowSize = new Point();
-        
+        myinstance = this;
 		Display display = getWindow().getWindowManager().getDefaultDisplay();
 		windowSize.x = display.getWidth(); // TODO check => This get's are deprecated
 		windowSize.y = display.getHeight();
@@ -147,9 +148,9 @@ public class GamePartTwoActivity extends Activity {
 	    			}
 	    			if (selections.isEmpty())
 	    				return;
-			    	finish();
-	    			linearLayout.removeAllViews();
-	    			resultsRow.removeAllViews();
+//			    	finish();
+//	    			linearLayout.removeAllViews();
+//	    			resultsRow.removeAllViews();
 	    			finish();
 	    			if(selections.size() > 1 || !selections.contains(correctAnswer)) {
 	    				Log.i("Senaid", "result is wrong " + correctAnswer + " and size: " + selections.size());
@@ -159,7 +160,10 @@ public class GamePartTwoActivity extends Activity {
 	    				b.putStringArrayList("reasons", reasons);
 	    				intent.putExtras(b);
 	    				startActivity(intent);
+	    				return;
 	    			}
+	    			Intent intent = new Intent(myinstance, FullscreenActivity.class);
+	    			startActivity(intent);
 	    		}; 
 	    	};
 	    	checkButton.setOnClickListener(checkButtonListener);

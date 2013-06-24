@@ -3,6 +3,7 @@ package com.screen.activity;
 import java.util.ArrayList;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -23,13 +24,14 @@ public class WrongActivity extends Activity {
 	private LinearLayout linearLayout;
 	private Point windowSize;
 	private Button playAgain;
+	private WrongActivity myinstace;
 
 	@SuppressWarnings("deprecation")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_wrong);
-		
+		myinstace = this;
 		Bundle b = getIntent().getExtras();
 		ArrayList<String> reasons = b.getStringArrayList("reasons");
 		
@@ -113,6 +115,8 @@ public class WrongActivity extends Activity {
 	    	    	playAgain.setBackgroundColor(Color.DKGRAY);
 	    	    	linearLayout.removeAllViews();
 	    			finish();
+	    			Intent intent = new Intent(myinstace, FullscreenActivity.class);
+	    			startActivity(intent);
 	    		}; 
 	    	};
 	    	playAgain.setOnClickListener(playAgainListener);

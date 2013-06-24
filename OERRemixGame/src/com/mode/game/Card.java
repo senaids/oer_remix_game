@@ -1,12 +1,12 @@
 package com.mode.game;
 
+import com.screen.activity.R;
+
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TableRow;
-
-import com.screen.activity.R;
 
 public class Card extends ImageView{
 	// represents the type of the card

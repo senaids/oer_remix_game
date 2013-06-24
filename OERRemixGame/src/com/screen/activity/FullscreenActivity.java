@@ -207,6 +207,7 @@ public class FullscreenActivity extends Activity {
 			intent.putExtras(b);
 			startActivity(intent);
 		}
+		finish();
 	}
 
 	//-----------------------------------------------------------------------------
@@ -366,6 +367,7 @@ public class FullscreenActivity extends Activity {
 		// http://developer.android.com/training/basics/firstapp/starting-activity.html
 		Intent intent = new Intent(this, GamePartTwoActivity.class);
 		startActivity(intent);
+		finish();
 	}
 
     
